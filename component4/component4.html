@@ -4,13 +4,15 @@
     <li>one</li>
     <li>two</li>
     <li>three</li>
-    <li><button onclick="toggle()">Toggle</button></li>
+    <li><button onclick="comp4.toggle()">Toggle</button></li>
 </ul>
-<button if="showBtn">Button</button>
+<button if="comp4.showBtn">Button</button>
 <script>
-    var showBtn = true;
-    function toggle() {
-        showBtn = !showBtn;
-        console.log("new value of showBtn",showBtn);
+    class Component4 {
+        showBtn = true;
+        toggle() {
+            this.showBtn = !this.showBtn;
+        }
     }
+    framework.addSelector("comp4",Component4);
 </script>
