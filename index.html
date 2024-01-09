@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#" routerLink="comp1">Page 1</a></li>
+    <li><a href="#" routerLink="comp2">Page 2</a></li>
+    <li><a href="#" routerLink="comp3">Page 3</a></li>
+    <li><a href="#" routerLink="comp4">Page 4</a></li>
+  </ul>
+</nav>
+
+<router-outlet routes='{
+"comp1":"component1.html",
+"comp2":"component2.html",
+"comp3":"component3.html",
+"comp4":"component4/component4.html"
+}'>
+</router-outlet>
+<script src="minimal-ui-framework.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<h1>This is Component4</h1>
+<input type="text"><button>Click Me from component4</button>
+<ul>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+    <li><button onclick="toggle()">Toggle</button></li>
+</ul>
+<button if="showBtn">Button</button>
+<script>
+    var showBtn = true;
+    function toggle() {
+        showBtn = !showBtn;
+        console.log("new value of showBtn",showBtn);
+    }
+</script>
